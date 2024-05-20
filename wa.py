@@ -243,7 +243,7 @@ contact_data = pd.DataFrame(columns=[
 
 
 def main():
-    contact_data = []
+    recipient_data = []
     email_data = []
     event_data = []
     event_registration_data = []
@@ -254,7 +254,6 @@ def main():
     contact_identifiers = getattr(contacts, 'FieldValues', [])
     print(contact_identifiers)
 
-    recipient_data = []
 
     for contact_id in contact_identifiers:
         try:
